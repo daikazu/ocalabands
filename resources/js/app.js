@@ -1,62 +1,21 @@
 import './bootstrap';
-document.addEventListener('alpine:init', () => {
-    Alpine.data('DarkModeToggle', () => {
-        return {
-            mode: 'dark',
-            init() {
-                this.setInitialMode();
-            },
-            setInitialMode() {
-                const storedTheme = window.localStorage.getItem('theme');
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+import initAllAnimations from './fade-up-animation';
 
-                if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-                    this.enableDarkMode();
-                } else {
-                    this.disableDarkMode();
-                }
-            },
-            toggleDarkMode() {
-                if (this.mode === 'dark') {
-                    this.disableDarkMode();
-                } else {
-                    this.enableDarkMode();
-                }
-            },
-            enableDarkMode() {
-                document.documentElement.classList.add('dark');
-                window.localStorage.setItem('theme', 'dark');
-                this.mode = 'dark';
-            },
-            disableDarkMode() {
-                document.documentElement.classList.remove('dark');
-                window.localStorage.setItem('theme', 'light');
-                this.mode = 'light';
-            },
-        };
-    });
+// Initialize all intersection animations when DOM is loaded
+document.addEventListener('DOMContentLoaded', initAllAnimations);
 
-    Alpine.data('DropDown', () => {
-        return {
-            open: false,
-            toggle() {
-                if (this.open) {
-                    return this.close();
-                }
-
-                this.$refs.button.focus();
-
-                this.open = true;
-            },
-            close(focusAfter) {
-                if (!this.open) return;
-
-                this.open = false;
-
-                focusAfter && focusAfter.focus();
-            },
-        };
-    });
+Alpine.data('MainNavScrollPeek', () => {
+    return {
+        scrollPosition: 0,
+        isVisible: true,
+        init() {
+            window.addEventListener('scroll', () => {
+                const currentPosition = window.scrollY || document.documentElement.scrollTop;
+                this.isVisible = currentPosition <= 20 || currentPosition < this.scrollPosition;
+                this.scrollPosition = currentPosition;
+            });
+        },
+    };
 });
 
 (function (listenerName = 'app:scroll-to') {

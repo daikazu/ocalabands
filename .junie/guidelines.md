@@ -1,6 +1,6 @@
-# Development Guidelines for OCA Bands Project
+# Development Guidelines for Ocala Bands Project
 
-This document provides guidelines and instructions for developing and maintaining the OCA Bands project.
+This document provides guidelines and instructions for developing and maintaining the Ocala Bands project.
 
 ## Build/Configuration Instructions
 

@@ -23,29 +23,29 @@
 
         /*  better image reset */
 
-        img {
-            max-width: 100%;
-            height: auto;
-            vertical-align: middle;
-            font-style: italic;
-            background-repeat: no-repeat;
-            background-size: cover;
-            shape-margin: 0.75rem;
-        }
+        /*img {*/
+        /*    max-width: 100%;*/
+        /*    height: auto;*/
+        /*    vertical-align: middle;*/
+        /*    font-style: italic;*/
+        /*    background-repeat: no-repeat;*/
+        /*    background-size: cover;*/
+        /*    shape-margin: 0.75rem;*/
+        /*}*/
 
-        .no-scroll {
-            height: 100%;
-            overflow: hidden;
-        }
+        /*.no-scroll {*/
+        /*    height: 100%;*/
+        /*    overflow: hidden;*/
+        /*}*/
 
         /* Remove the default box-shadow for invalid elements to prevent inputs in Livewire components showing with a
            red border by default in Firefox. See: https://github.com/laravel-frontend-presets/tall/issues/7 */
 
-        input:invalid,
-        textarea:invalid,
-        select:invalid {
-            box-shadow: none;
-        }
+        /*input:invalid,*/
+        /*textarea:invalid,*/
+        /*select:invalid {*/
+        /*    box-shadow: none;*/
+        /*}*/
     }
 
 

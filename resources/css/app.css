@@ -10,3 +10,12 @@
     margin-inline: auto;
     padding-inline: 1rem;
 }
+
+
+@layer components {
+
+.hero-home{
+    @apply  bg-hero-home bg-cover bg-center before:absolute before:inset-0 before:bg-linear-to-b before:from-ocala-background/70 before:via-ocala-background/50 before:to-ocala-background;
+}
+
+}

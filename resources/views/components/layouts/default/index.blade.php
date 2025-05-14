@@ -13,11 +13,7 @@
     </head>
 
     <body
-        @class([
-            'grid min-h-dvh grid-cols-1 grid-rows-[auto_1fr_auto]',
-            'bg-neutral-100 text-neutral-800 antialiased ',
-            'debug-screens' => config('app.debug'),
-        ])
+        @class(['grid min-h-dvh grid-cols-1 grid-rows-[auto_1fr_auto]', 'debug-screens' => config('app.debug')])
     >
         @stack('body')
         <x-layouts.common.no-script />

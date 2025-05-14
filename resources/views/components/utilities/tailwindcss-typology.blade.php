@@ -1,8 +1,8 @@
 <section class="py-16">
     <div class="container mx-auto">
-        <h2 class="mb-12 text-center text-3xl font-bold">Typography Showcase</h2>
+        <h2 class="mb-12 text-center text-3xl font-bold neon-glow-text">Typography Showcase</h2>
 
-        <div class="prose max-w-none">
+        <div class="prose max-w-none prose-accent prose-invert">
             <!-- Headings -->
             <div class="mb-12">
                 <h3 class="mb-6 text-xl font-semibold">Heading Elements</h3>
@@ -45,9 +45,10 @@
                     <div class="text-xs text-gray-500">Standard Paragraph</div>
                 </div>
                 <p>
-                    This is a standard paragraph with regular text. The Tailwind Typography plugin adds sensible
-                    defaults to all common prose elements. This text demonstrates the standard paragraph styling with
-                    appropriate line height, font size, and margins.
+                    This is a standard paragraph with regular text. The
+                    <a href="#">Tailwind Typography</a>
+                    plugin adds sensible defaults to all common prose elements. This text demonstrates the standard
+                    paragraph styling with appropriate line height, font size, and margins.
                 </p>
 
                 <div class="not-prose mt-6 mb-4">
@@ -304,7 +305,7 @@
                     <div class="text-xs text-gray-500">Prose Size Examples</div>
                 </div>
                 <div class="space-y-6">
-                    <div class="prose prose-sm rounded-lg border border-gray-200 p-4">
+                    <div class="prose-sm rounded-lg border border-gray-200 p-4">
                         <h4>Small Size (prose-sm)</h4>
                         <p>
                             This is a demonstration of smaller typography using
@@ -312,14 +313,14 @@
                             . Notice the reduced font size, line height, and spacing.
                         </p>
                     </div>
-                    <div class="prose rounded-lg border border-gray-200 p-4">
+                    <div class="rounded-lg border border-gray-200 p-4">
                         <h4>Default Size</h4>
                         <p>
                             This is a demonstration of default typography size. This is the standard size used across
                             the application.
                         </p>
                     </div>
-                    <div class="prose prose-lg rounded-lg border border-gray-200 p-4">
+                    <div class="prose-lg rounded-lg border border-gray-200 p-4">
                         <h4>Large Size (prose-lg)</h4>
                         <p>
                             This is a demonstration of larger typography using
@@ -327,7 +328,7 @@
                             . Notice the increased font size, line height, and spacing.
                         </p>
                     </div>
-                    <div class="prose prose-xl rounded-lg border border-gray-200 p-4">
+                    <div class="prose-xl rounded-lg border border-gray-200 p-4">
                         <h4>Extra Large Size (prose-xl)</h4>
                         <p>
                             This is a demonstration of extra large typography using
@@ -335,7 +336,7 @@
                             . Notice the even larger font size, line height, and spacing.
                         </p>
                     </div>
-                    <div class="prose prose-2xl rounded-lg border border-gray-200 p-4">
+                    <div class="prose-2xl rounded-lg border border-gray-200 p-4">
                         <h4>2XL Size (prose-2xl)</h4>
                         <p>
                             This is a demonstration of the largest typography size using

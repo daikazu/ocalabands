@@ -1,11 +1,16 @@
-<nav x-data="{ open: false }" class="border-b border-gray-100 bg-white shadow-sm">
+<nav x-data="{ open: false }" class="border-b border-secondary-500/30 bg-neutral-900/80 shadow-sm backdrop-blur-sm">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 justify-between">
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex shrink-0 items-center">
-                    <a href="{{ route('home') }}" class="block h-8 w-auto">
-                        <x-application-logo class="block h-8 w-auto fill-current text-gray-800" />
+                    <a href="{{ route('home') }}" class="flex items-center">
+                        <h1 class="font-heading text-xl font-bold neon-glow-text">
+                            OCALA
+                            <span class="neon-glow-text-accent text-accent-500">BANDS</span>
+                        </h1>
+
+                        {{-- <x-application-logo class="block h-8 w-auto fill-current text-gray-800" /> --}}
                     </a>
                 </div>
 

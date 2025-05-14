@@ -32,6 +32,9 @@ module.exports = {
                         },
                         'h1, h2, h3, h4, h5, h6': {
                             fontWeight: '900',
+                            fontFamily: theme('fontFamily.heading'),
+                            color: theme('color.secondary.500'),
+                            filter: 'drop-shadow(0 0 8px color-mix(in oklab, var(--color-secondary-500) 70%, transparent))',
                         },
                         // h1: {
                         //     fontSize: "var(--font-size-6xl)",
@@ -46,28 +49,32 @@ module.exports = {
                     },
                 },
 
-                ...Object.entries(theme('colors')).reduce((reduced, [color, values]) => {
-                    if (!isUsableColor(color, values)) {
-                        return reduced;
-                    }
-
-                    return {
-                        ...reduced,
-                        [color]: {
-                            css: [
-                                {
-                                    a: {
-                                        color: values[600],
-                                        '&:hover': {
-                                            color: values[700],
-                                        },
-                                    },
-                                    'a code': { color: values[600] },
+                accent: {
+                    css: [
+                        {
+                            a: {
+                                color: theme('color.accent.500'),
+                                '&:hover': {
+                                    color: theme('color.secondary.500'),
                                 },
-                            ],
+                            },
+                            'a code': { color: theme('color.accent.500') },
                         },
-                    };
-                }, {}),
+                    ],
+                },
+                secondary: {
+                    css: [
+                        {
+                            a: {
+                                color: theme('color.secondary.600'),
+                                '&:hover': {
+                                    color: theme('color.secondary.700'),
+                                },
+                            },
+                            'a code': { color: theme('color.secondary.600') },
+                        },
+                    ],
+                },
             }),
         },
     },

@@ -10,27 +10,20 @@
     "src": "node_modules/lite-youtube-embed/src/lite-yt-embed.js",
     "isEntry": true
   },
-  "resources/assets/theme/pattern-dark.svg": {
-    "file": "assets/pattern-dark-Cd_TL-sw.svg",
-    "src": "resources/assets/theme/pattern-dark.svg"
-  },
-  "resources/assets/theme/pattern-white.svg": {
-    "file": "assets/pattern-white-CamtEm5g.svg",
-    "src": "resources/assets/theme/pattern-white.svg"
+  "resources/assets/theme/hero-home.jpg": {
+    "file": "assets/hero-home-BjdKdJVn.jpg",
+    "src": "resources/assets/theme/hero-home.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BDkVDfRo.css",
+    "file": "assets/app-4qkntcoQ.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-FNLUazbq.js",
+    "file": "assets/app-880oDpqM.js",
     "name": "app",
     "src": "resources/js/app.js",
-    "isEntry": true,
-    "css": [
-      "assets/app-B2ZarPwU.css"
-    ]
+    "isEntry": true
   },
   "resources/js/event-tracking.js": {
     "file": "assets/event-tracking-DiHPoD6S.js",
